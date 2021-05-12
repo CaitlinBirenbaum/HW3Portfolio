@@ -15,7 +15,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Times New Roman", Times, serif;
-  color: var(--primary);
+  color: var(--tertiary);
   background-color: var(--light);
   line-height: 1.5;
 }
@@ -82,7 +82,7 @@ nav a {
 
 nav a:hover {
   background-size: 100% 100%;
-  color: var(--primary);
+  color: whitesmoke;
 }
 
 nav a:last-child {
@@ -123,6 +123,7 @@ main {
 }
 
 .page-section {
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
   margin: 25px 0;
   padding: 10px 0;
   display: flex;
