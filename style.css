@@ -4,18 +4,18 @@
 
 /* color palette */
 :root {
-  --primary: rgb(230, 204, 178);
+  --primary: rgb(137, 87, 55);
   --secondary: rgba(221, 184, 146);
-  --tertiary: rgba(176, 137, 104);
-  --dark: rgba(21, 13, 8);
-  --light: rgba(238, 238, 247, 1);
+  --tertiary: rgba(137, 87, 55);
+  --dark: rgba(94, 48, 35);
+  --light: rgba(243, 233, 220);
 }
 
 body {
   margin: 0;
   padding: 0;
   font-family: "Times New Roman", Times, serif;
-  color: var(--primary);
+  color: var(--dark);
   background-color: var(--light);
   line-height: 1.5;
 }
@@ -117,6 +117,7 @@ main {
 
 .page-wrapper {
   max-width: 88%;
+  color: black;
   margin-left: auto;
   margin-right: auto;
 }
