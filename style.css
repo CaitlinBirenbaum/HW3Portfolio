@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-/* brand color palette */
+/* color palette */
 :root {
   --primary: rgb(230, 204, 178);
   --secondary: rgba(221, 184, 146);
@@ -15,7 +15,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Times New Roman", Times, serif;
-  color: var(--tertiary);
+  color: var(--primary);
   background-color: var(--light);
   line-height: 1.5;
 }
@@ -64,7 +64,6 @@ nav {
 
 nav a {
   text-decoration: none;
-  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
   padding: 5px 10px;
   color: var(--secondary);
   margin-right: 10px;
@@ -82,7 +81,7 @@ nav a {
 
 nav a:hover {
   background-size: 100% 100%;
-  color: whitesmoke;
+  color: var(--primary);
 }
 
 nav a:last-child {
@@ -93,7 +92,7 @@ main {
   margin-top: 20px;
   margin-bottom: 45px;
 }
-
+/*banner*/
 .hero-banner {
   background: rgb(228, 200, 158);
   background-size: cover;
@@ -123,7 +122,6 @@ main {
 }
 
 .page-section {
-  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
   margin: 25px 0;
   padding: 10px 0;
   display: flex;
@@ -149,7 +147,7 @@ main {
 .page-section p {
   margin-bottom: 20px;
 }
-
+/*flex*/
 .flex-container {
   display: flex;
   flex-wrap: wrap;
@@ -174,7 +172,7 @@ main {
   font-size: 0.9rem;
 }
 
-/* feature first portfolio item */
+/*first portfolio item */
 .flex-item:first-child {
   min-height: 400px;
   flex-basis: 100%;
@@ -225,6 +223,29 @@ main {
   color: var(--secondary);
 }
 
+/* portfolio project images */
+.project1 {
+  background-image: url("../images/02-run-buddy.jpg");
+}
+
+.project2 {
+  background-image: url("../images/02-portfolio-1.jpg");
+}
+
+.project3 {
+  background-image: url("../images/02-portfolio-2.jpg");
+}
+
+.project4 {
+  background-image: url("../images/02-portfolio-3.jpg");
+}
+
+.project5 {
+  background-image: url("../images/02-portfolio-4.jpg");
+}
+
+/* end portfolio project images */
+
 @media screen and (max-width: 980px) {
   header {
     padding: 0 0 10px 0;
@@ -249,7 +270,6 @@ main {
   }
 
   .page-section > h2 {
-    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
     border-right: none;
     border-bottom: 4px solid var(--primary);
     margin-bottom: 20px;
