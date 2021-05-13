@@ -107,7 +107,7 @@ main {
 }
 
 .hero-banner h2 {
-  color: var(--tertiary);
+  background-image: url "https://wallpapercave.com/wp/wp7696611.png";
   margin: 0;
   padding: 5px 10px;
   font-size: 2.3rem;
@@ -222,29 +222,6 @@ main {
   background-size: 100% 88%;
   color: var(--secondary);
 }
-
-/* portfolio project images */
-.project1 {
-  background-image: url("../images/02-run-buddy.jpg");
-}
-
-.project2 {
-  background-image: url("../images/02-portfolio-1.jpg");
-}
-
-.project3 {
-  background-image: url("../images/02-portfolio-2.jpg");
-}
-
-.project4 {
-  background-image: url("../images/02-portfolio-3.jpg");
-}
-
-.project5 {
-  background-image: url("../images/02-portfolio-4.jpg");
-}
-
-/* end portfolio project images */
 
 @media screen and (max-width: 980px) {
   header {
