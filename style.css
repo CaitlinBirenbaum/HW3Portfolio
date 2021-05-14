@@ -4,10 +4,9 @@
 
 /* color palette */
 :root {
-  --primary: rgb(137, 87, 55);
-  --secondary: rgba(221, 184, 146);
-  --tertiary: rgba(137, 87, 55);
-  --dark: rgba(94, 48, 35);
+  --primary: rgb(173, 133, 107);
+  --secondary: rgb(192, 133, 82);
+  --tertiary: rgb(218, 180, 157);
   --light: rgba(243, 233, 220);
 }
 
@@ -49,8 +48,7 @@ header {
 }
 
 header h1 {
-  color: var(--tertiary);
-  background-color: var(--secondary);
+  color: var(--light);
   margin: 0;
   font-size: 4vw;
   line-height: 1;
@@ -94,7 +92,7 @@ main {
 }
 /*banner*/
 .hero-banner {
-  background: rgb(228, 200, 158);
+  background: var(--secondary);
   background-size: cover;
   background-position: center;
   background-blend-mode: soft-light;
@@ -107,7 +105,6 @@ main {
 }
 
 .hero-banner h2 {
-  background-image: url "https://wallpapercave.com/wp/wp7696611.png";
   margin: 0;
   padding: 5px 10px;
   font-size: 2.3rem;
@@ -117,7 +114,7 @@ main {
 
 .page-wrapper {
   max-width: 88%;
-  color: black;
+  color: rgba(94, 48, 35);
   margin-left: auto;
   margin-right: auto;
 }
@@ -157,8 +154,8 @@ main {
 
 .flex-item {
   border: 5px solid var(--secondary);
-  background-color: var(--primary);
-  color: var(--tertiary);
+  background-color: rgb(218, 180, 157);
+  color: var(--light);
   min-height: 150px;
   max-height: 150px;
   flex-basis: calc(50% - 1em);
@@ -201,7 +198,7 @@ main {
 }
 
 .contact address a {
-  color: var(--tertiary);
+  color: rgb(94, 48, 35);
   padding: 5px;
   text-decoration: none;
   font-size: 1.3rem;

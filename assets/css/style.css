@@ -2,20 +2,20 @@
   box-sizing: border-box;
 }
 
-/* brand color palette */
+/* color palette */
 :root {
-  --primary: rgb(230, 204, 178);
-  --secondary: rgba(221, 184, 146);
-  --tertiary: rgba(176, 137, 104);
-  --dark: rgba(21, 13, 8);
-  --light: rgba(238, 238, 247, 1);
+  --primary: rgb(173, 133, 107);
+  --secondary: rgb(192, 133, 82);
+  --tertiary: rgb(218, 180, 157);
+  --dark: purple;
+  --light: rgba(243, 233, 220);
 }
 
 body {
   margin: 0;
   padding: 0;
   font-family: "Times New Roman", Times, serif;
-  color: var(--primary);
+  color: var(--dark);
   background-color: var(--light);
   line-height: 1.5;
 }
@@ -49,8 +49,7 @@ header {
 }
 
 header h1 {
-  color: var(--tertiary);
-  background-color: var(--secondary);
+  color: var(--light);
   margin: 0;
   font-size: 4vw;
   line-height: 1;
@@ -64,9 +63,8 @@ nav {
 
 nav a {
   text-decoration: none;
-  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
   padding: 5px 10px;
-  color: var(--secondary);
+  color: white;
   margin-right: 10px;
   background-image: linear-gradient(
     270deg,
@@ -93,9 +91,9 @@ main {
   margin-top: 20px;
   margin-bottom: 45px;
 }
-
+/*banner*/
 .hero-banner {
-  background: rgb(228, 200, 158);
+  background: var(--secondary);
   background-size: cover;
   background-position: center;
   background-blend-mode: soft-light;
@@ -108,7 +106,6 @@ main {
 }
 
 .hero-banner h2 {
-  color: var(--tertiary);
   margin: 0;
   padding: 5px 10px;
   font-size: 2.3rem;
@@ -118,6 +115,7 @@ main {
 
 .page-wrapper {
   max-width: 88%;
+  color: rgba(94, 48, 35);
   margin-left: auto;
   margin-right: auto;
 }
@@ -148,7 +146,7 @@ main {
 .page-section p {
   margin-bottom: 20px;
 }
-
+/*flex*/
 .flex-container {
   display: flex;
   flex-wrap: wrap;
@@ -157,8 +155,8 @@ main {
 
 .flex-item {
   border: 5px solid var(--secondary);
-  background-color: var(--primary);
-  color: var(--tertiary);
+  background-color: rgb(218, 180, 157);
+  color: var(--light);
   min-height: 150px;
   max-height: 150px;
   flex-basis: calc(50% - 1em);
@@ -173,7 +171,7 @@ main {
   font-size: 0.9rem;
 }
 
-/* feature first portfolio item */
+/*first portfolio item */
 .flex-item:first-child {
   min-height: 400px;
   flex-basis: 100%;
@@ -201,7 +199,7 @@ main {
 }
 
 .contact address a {
-  color: var(--tertiary);
+  color: rgb(94, 48, 35);
   padding: 5px;
   text-decoration: none;
   font-size: 1.3rem;
@@ -223,29 +221,6 @@ main {
   background-size: 100% 88%;
   color: var(--secondary);
 }
-
-/* portfolio project images */
-.run-buddy {
-  background-image: url("../images/02-run-buddy.jpg");
-}
-
-.led-wall {
-  background-image: url("../images/02-portfolio-1.jpg");
-}
-
-.react-calc {
-  background-image: url("../images/02-portfolio-2.jpg");
-}
-
-.pastel-puzzles {
-  background-image: url("../images/02-portfolio-3.jpg");
-}
-
-.surf-report {
-  background-image: url("../images/02-portfolio-4.jpg");
-}
-
-/* end portfolio project images */
 
 @media screen and (max-width: 980px) {
   header {
@@ -271,47 +246,11 @@ main {
   }
 
   .page-section > h2 {
-    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
     border-right: none;
     border-bottom: 4px solid var(--primary);
     margin-bottom: 20px;
     padding-bottom: 10px;
     text-align: left;
     font-size: 7vw;
-  }
-  /* Style inputs with type="text", select elements and textareas */
-  input[type="text"],
-  select,
-  textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
-  }
-
-  /* Style the submit button with a specific background color etc */
-  input[type="submit"] {
-    background-color: #04aa6d;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-
-  /* When moving the mouse over the submit button, add a darker green color */
-  input[type="submit"]:hover {
-    background-color: #45a049;
-  }
-
-  /* Add a background color and some padding around the form */
-  .container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
   }
 }
