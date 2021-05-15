@@ -9,7 +9,7 @@
   --tertiary: rgb(218, 180, 157);
   --light: rgba(243, 233, 220);
 }
-
+/*body*/
 body {
   margin: 0;
   padding: 0;
@@ -35,7 +35,7 @@ p {
   font-style: bold;
   color: black;
 }
-
+/*header*/
 header {
   padding: 15px 6% 15px 0;
   display: flex;
@@ -53,7 +53,7 @@ header h1 {
   font-size: 4vw;
   line-height: 1;
 }
-
+/*navigation*/
 nav {
   display: flex;
   flex-direction: row;
