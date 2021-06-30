@@ -166,8 +166,9 @@ main {
 }
 
 /* portfolio project images */
+/*attempted to add screenshots from assets folder but having difficulties embedding*/
 .project1 {
-  background-image: url("https://bit.ly/33J1W7v");
+  background-image: url(C:\Users\caitl\Code\PortfolioProject\assets\images\Screenshot);
 }
 
 .project2 {
